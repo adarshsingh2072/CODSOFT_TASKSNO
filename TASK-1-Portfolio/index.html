@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Singh - Premium Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">Adarsh Singh<span>.</span></div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Profile Image -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hello, I'm</h3>
+            <h1>Adarsh Singh</h1>
+            <p>B.Tech CSE Student & Startup Co-Founder | Frontend Developer</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">View Work</a>
+                <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+            </div>
+        </div>
+        <div class="hero-img-box">
+            <!-- Yahan apni image ka naam ya path daal dein (e.g., profile.jpg) -->
+            <img src="adarshimg.jpeg" alt="adarsh singh">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-card">
+            <p>I am an enthusiastic Computer Science & Engineering undergraduate student at LNCT College, Bhopal. Passionate about web development, clean code, and building high-performance modern user interfaces. Along with my academics, I am also a Co-Founder of a startup venture focusing on branding and digital advertisement.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML5 & CSS3</h3><p>Responsive and modern layouts</p></div>
+            <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3><p>Dynamic interfaces & logic</p></div>
+            <div class="skill-card"><i class="fab fa-python"></i><h3>Python & DSA</h3><p>Core problem solving</p></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git & GitHub</h3><p>Version control & deployment</p></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A fully responsive personal portfolio designed with premium aesthetics.</p>
+                    <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>To-Do List App</h3>
+                    <p>Task management web application featuring local storage persistence.</p>
+                    <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Startup Landing Page</h3>
+                    <p>Professional promotional landing page built for business marketing.</p>
+                    <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2 class="section-title">My <span>Resume</span></h2>
+        <div class="resume-card">
+            <p>Download my professional resume to explore my academic background, technical skills, and achievements.</p>
+            <br>
+            <a href="#" id="download-btn" class="btn primary-btn"><i class="fas fa-download"></i> Download Resume / CV</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn" style="width: 100%;">Send Message</button>
+                <p id="form-msg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Adarsh Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

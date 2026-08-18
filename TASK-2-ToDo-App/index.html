@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster - To-Do List</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo">
+        <i class="fa-solid fa-list-check"></i>
+        <h1>TaskMaster</h1>
+      </div>
+      <button id="themeToggle" class="theme-btn" type="button" title="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats-container">
+      <div class="stat-card">
+        <span class="stat-num" id="totalTasks">0</span>
+        <span class="stat-label">Total</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" id="completedTasks">0</span>
+        <span class="stat-label">Completed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" id="pendingTasks">0</span>
+        <span class="stat-label">Pending</span>
+      </div>
+    </section>
+
+    <!-- Task Input Wrapper -->
+    <div class="task-form-wrapper">
+      <div class="input-row">
+        <input type="text" id="taskTitle" placeholder="What needs to be done?" autocomplete="off">
+        <button type="button" id="addBtn"><i class="fa-solid fa-plus"></i> Add</button>
+      </div>
+      
+      <div class="meta-row">
+        <div class="meta-item">
+          <label>Category</label>
+          <select id="taskCategory">
+            <option value="Work">💼 Work</option>
+            <option value="Personal">🏠 Personal</option>
+            <option value="Study">📚 Study</option>
+            <option value="Fitness">🏋️ Fitness</option>
+          </select>
+        </div>
+
+        <div class="meta-item">
+          <label>Priority</label>
+          <select id="taskPriority">
+            <option value="low">🟢 Low</option>
+            <option value="medium" selected>🟡 Medium</option>
+            <option value="high">🔴 High</option>
+          </select>
+        </div>
+
+        <div class="meta-item">
+          <label>Due Date</label>
+          <input type="date" id="taskDueDate">
+        </div>
+      </div>
+    </div>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-section">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search tasks...">
+      </div>
+
+      <div class="filter-tabs">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+        <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList" class="task-list"></ul>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state">
+      <i class="fa-solid fa-clipboard-check"></i>
+      <p>No tasks found. Add a task to get started!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
